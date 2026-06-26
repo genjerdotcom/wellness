@@ -1,0 +1,45 @@
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "Package Manager",
+  description: "Manage your packages easily",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+    >
+      <body className="min-h-screen bg-gray-50 text-gray-900">
+        <div className="flex min-h-screen flex-col">
+          <header className="border-b border-gray-200 bg-white">
+            <div className="mx-auto flex h-16 max-w-7xl items-center px-6">
+              <h1 className="text-xl font-bold">Package Manager</h1>
+            </div>
+          </header>
+
+          <main className="flex-1">
+            <div className="mx-auto max-w-7xl px-6 py-8">{children}</div>
+          </main>
+        </div>
+      </body>
+    </html>
+  );
+}
