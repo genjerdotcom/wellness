@@ -289,15 +289,15 @@ AI was treated as an accelerator rather than an autonomous implementation tool.
 
 ### Admin Portal
 
-![Admin Portal](./screenshots/admin-1.png)
-![Admin Portal](./screenshots/admin-2.png)
-![Admin Portal](./screenshots/admin-3.png)
+<img src="./screenshots/admin-1.png" width="100%" />
+<img src="./screenshots/admin-2.png" width="100%" />
+<img src="./screenshots/admin-3.png" width="100%" />
 
 ### Mobile App
 
-![Mobile App](./screenshots/mobile-1.png)
+<img src="./screenshots/mobile-1.png" width="300" />
 
-### Swagger
+### Swagger API
 
-![Swagger](./screenshots/backend-1.png)
-![Swagger](./screenshots/backend-2.png)
+<img src="./screenshots/backend-1.png" width="100%" />
+<img src="./screenshots/backend-2.png" width="100%" />
